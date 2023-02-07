@@ -1,0 +1,30 @@
+Name:    Michael Navarro-Sanchez
+Course:  COSC 4301 Modern Programming
+Project: One
+
+
+Employees processed polymorphically:
+
+John Smith
+Social Security Number: 111-11-1111
+Weekly Salary: $800.00
+
+Karen Price
+Social Security Number: 222-22-2222
+Weekly Salary: $670.00
+
+Sue Jones
+Social Security Number: 333-33-3333
+Weekly Salary: $600.00
+
+Bob Lewis
+Social Security Number: 444-44-4444
+Weekly Salary: $500.00
+
+Rick Bridges
+Social Security Number: 555-55-5555
+Weekly Salary: $900.00
+
+John Doe
+Social Security Number: 666-66-6666
+Weekly Salary: $837.50

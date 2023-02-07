@@ -1,0 +1,39 @@
+Name:    Michael Navarro-Sanchez
+Course:  COSC 4301 Modern Programming
+Project: Nine
+
+
+
+Problem: 2 - 3
+Please enter solution: -1
+Nice work!
+
+Press "ENTER" to continue...
+
+Problem: 2 % 8
+Please enter solution: 2
+Keep up the good work!
+
+Press "ENTER" to continue...
+
+Problem: 7 % 6
+Please enter solution: 1
+Keep up the good work!
+
+Press "ENTER" to continue...
+
+Problem: 1 + 1
+Please enter solution: 2
+Very good!
+
+Press "ENTER" to continue...
+
+Problem: 6 + 4
+Please enter solution: 10
+Very good!
+
+Press "ENTER" to continue...
+Level up? (Y)es (N)o: N
+Exit program? (Y)es (N)o: N
+
+Problem: 7 * 3

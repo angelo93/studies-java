@@ -1,0 +1,20 @@
+
+Cashier: David
+Date: 09/21/2022 20:21:19
+
+==================== Cart ====================
+Item Number  Description  Num Units  Price ($) 
+5555         Coat         1          22.98    
+2000         Jeans        2          25.95    
+4444         Ring         1          1119.99  
+3000         Shirt        2          12.50    
+5000         Socks        1          2.98     
+8000         Suit         1          250.98   
+8500         Tie          1          25.50    
+3333         Vest         1          17.50    
+
+==================== Total ====================
+Total                                1516.83
+Tax                                  125.14
+Final                                1641.97
+

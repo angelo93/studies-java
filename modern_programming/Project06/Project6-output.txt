@@ -1,0 +1,167 @@
+Name:    Michael Navarro-Sanchez
+Course:  COSC 4301 Modern Programming
+Project: Six
+
+
+This program allows you to create a fraction to do arithmetic with.
+To exit the program, enter 0 for both numerator and denominator when asked.
+
+Please enter a numerator (integer): 1
+
+Please enter a denominator (integer): 3
+
+Reduced Form: 1/3 --> 1/3
+
+Press "ENTER" to continue...
+
+=======================================
+|              Main Menu              |
+=======================================
+To exit the program, enter 0 for both
+numerator and denominator when asked.
+
+1) Add two Fractions
+2) Subtract two Fractions
+3) Multiply two Fractions
+4) Divide two Fractions
+5) Print the Fraction
+
+Please select a choice: 1
+
+Please enter a numerator (integer): 1
+
+Please enter a denominator (integer): 6
+
+Reduced Form: 1/6 --> 1/6
+
+Adding: 1/3 + 1/6 = 1/2
+
+Press "ENTER" to continue...
+
+=======================================
+|              Main Menu              |
+=======================================
+To exit the program, enter 0 for both
+numerator and denominator when asked.
+
+1) Add two Fractions
+2) Subtract two Fractions
+3) Multiply two Fractions
+4) Divide two Fractions
+5) Print the Fraction
+
+Please select a choice: 2
+
+Please enter a numerator (integer): 3
+
+Please enter a denominator (integer): 8
+
+Reduced Form: 3/8 --> 3/8
+
+Subtracting: 1/2 - 3/8 = 1/8
+
+Press "ENTER" to continue...
+
+=======================================
+|              Main Menu              |
+=======================================
+To exit the program, enter 0 for both
+numerator and denominator when asked.
+
+1) Add two Fractions
+2) Subtract two Fractions
+3) Multiply two Fractions
+4) Divide two Fractions
+5) Print the Fraction
+
+Please select a choice: 3
+
+Please enter a numerator (integer): 8
+
+Please enter a denominator (integer): 5
+
+Reduced Form: 8/5 --> 8/5
+
+Multiplying: (1/8) * (8/5) = 1/5
+
+Press "ENTER" to continue...
+
+=======================================
+|              Main Menu              |
+=======================================
+To exit the program, enter 0 for both
+numerator and denominator when asked.
+
+1) Add two Fractions
+2) Subtract two Fractions
+3) Multiply two Fractions
+4) Divide two Fractions
+5) Print the Fraction
+
+Please select a choice: 4
+
+Please enter a numerator (integer): 1
+
+Please enter a denominator (integer): 1000
+
+Reduced Form: 1/1000 --> 1/1000
+
+Multiplying: (1/5) * (1/1000) = 200/1
+
+Press "ENTER" to continue...
+
+=======================================
+|              Main Menu              |
+=======================================
+To exit the program, enter 0 for both
+numerator and denominator when asked.
+
+1) Add two Fractions
+2) Subtract two Fractions
+3) Multiply two Fractions
+4) Divide two Fractions
+5) Print the Fraction
+
+Please select a choice: 5
+
+Mixed Form: 200(0/1)
+Press "ENTER" to continue...
+
+=======================================
+|              Main Menu              |
+=======================================
+To exit the program, enter 0 for both
+numerator and denominator when asked.
+
+1) Add two Fractions
+2) Subtract two Fractions
+3) Multiply two Fractions
+4) Divide two Fractions
+5) Print the Fraction
+
+Please select a choice: 1
+
+Please enter a numerator (integer): 1
+
+Please enter a denominator (integer): 0
+Denominator can NOT be 0
+
+Press "ENTER" to continue...
+
+=======================================
+|              Main Menu              |
+=======================================
+To exit the program, enter 0 for both
+numerator and denominator when asked.
+
+1) Add two Fractions
+2) Subtract two Fractions
+3) Multiply two Fractions
+4) Divide two Fractions
+5) Print the Fraction
+
+Please select a choice: 1
+
+Please enter a numerator (integer): 0
+
+Please enter a denominator (integer): 0

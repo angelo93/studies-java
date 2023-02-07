@@ -1,0 +1,115 @@
+Name:    Michael Navarro-Sanchez
+Course:  COSC 4301 Modern Programming
+Project: Project One
+
+
+
+Your system has 6 processors
+
+pool-1-thread-2 wrote haiku:
+ "Having been erased,
+ the document you are seeking
+ must now be retyped."
+At loop counter 1
+
+pool-1-thread-4 wrote haiku:
+ "Stay the patient course
+ of little worth is your ire
+ the network is down."
+At loop counter 1
+
+pool-1-thread-5 wrote haiku:
+ "Hello World is the
+ most famous computer code
+ ever written in C"
+At loop counter 1
+
+pool-1-thread-3 wrote haiku:
+ "The Web site you seek
+ Cannot be located, but
+ Countless more exist."
+At loop counter 1
+
+pool-1-thread-3 wrote haiku:
+ "A crash reduces
+ your expensive computer
+ to a simple stone."
+At loop counter 2
+
+pool-1-thread-1 wrote haiku:
+ "Having been erased,
+ the document you are seeking
+ must now be retyped."
+At loop counter 1
+
+pool-1-thread-6 wrote haiku:
+ "Stay the patient course
+ of little worth is your ire
+ the network is down."
+At loop counter 1
+
+pool-1-thread-1 wrote haiku:
+ "The Web site you seek
+ Cannot be located, but
+ Countless more exist."
+At loop counter 2
+
+pool-1-thread-3 wrote haiku:
+ "Stay the patient course
+ of little worth is your ire
+ the network is down."
+At loop counter 3
+
+pool-1-thread-5 wrote haiku:
+ "Odd bed fellows
+ are Solaris and Linux
+ who would have thunk it?"
+At loop counter 2
+
+pool-1-thread-4 wrote haiku:
+ "Odd bed fellows
+ are Solaris and Linux
+ who would have thunk it?"
+At loop counter 2
+
+pool-1-thread-2 wrote haiku:
+ "The Web site you seek
+ Cannot be located, but
+ Countless more exist."
+At loop counter 2
+
+pool-1-thread-4 wrote haiku:
+ "The Web site you seek
+ Cannot be located, but
+ Countless more exist."
+At loop counter 3
+
+pool-1-thread-5 wrote haiku:
+ "Hello World is the
+ most famous computer code
+ ever written in C"
+At loop counter 3
+
+pool-1-thread-1 wrote haiku:
+ "Stay the patient course
+ of little worth is your ire
+ the network is down."
+At loop counter 3
+
+pool-1-thread-6 wrote haiku:
+ "A crash reduces
+ your expensive computer
+ to a simple stone."
+At loop counter 2
+
+pool-1-thread-2 wrote haiku:
+ "Hello World is the
+ most famous computer code
+ ever written in C"
+At loop counter 3
+
+pool-1-thread-6 wrote haiku:
+ "A crash reduces
+ your expensive computer
+ to a simple stone."
+At loop counter 3

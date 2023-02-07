@@ -1,0 +1,65 @@
+Client 1:
+=========
+Name:    Michael Navarro-Sanchez
+Course:  COSC 4301 Modern Programming
+Project: Four
+
+
+Please enter three integers: 3,1,1
+Server: ERROR: First integer must be lower than the second.
+
+Please enter three integers: 1,3,3
+Server: ERROR: The third integer must be 1 or 2.
+
+Please enter three integers: 0,3,1
+Server: ERROR: All integers must be greater than 0.
+
+Please enter three integers: test
+Server: ERROR: Input must be composed of exactly 3 integers.
+
+Please enter three integers: 1,3,1,1
+Server: ERROR: Input must be composed of exactly 3 integers.
+
+Please enter three integers: bye
+
+Client 2:
+=========
+Name:    Michael Navarro-Sanchez
+Course:  COSC 4301 Modern Programming
+Project: Four
+
+
+Please enter three integers: 1, 87, 1
+Server: Sum: 1936 Mean: 44.00 Std Dev: 25.40
+
+Please enter three integers: 1, 137, 2
+Server: Sum: 4692 Mean: 69.00 Std Dev: 39.26
+
+Please enter three integers: 1, 8, 1
+Server: Sum: 16 Mean: 4.00 Std Dev: 2.24
+
+Please enter three integers: bye
+
+
+Server:
+=======
+Name:    Michael Navarro-Sanchez
+Course:  COSC 4301 Modern Programming
+Project: Four
+
+
+Client Connection Opened
+Client: 3,1,1
+Client: 1,3,3
+Client: 0,3,1
+Client: test
+Client: 1,3,1,1
+Client: bye
+Client Connection Closed
+
+Client Connection Opened
+Client: 1, 87, 1
+Client: 1, 137, 2
+Client: 1, 8, 1
+Client: bye
+Client Connection Closed

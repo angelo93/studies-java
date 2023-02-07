@@ -1,0 +1,9 @@
+The two browsers I used were FireFox Developer Edition and Microsoft Edge.
+Between the two, Microsoft Edge displays the raw form of the JSON data.
+However, there is no difference when viewing the actual webpage.
+Additionally, FF displays the formatted JSON data due to its integrated
+developer tools. However, the raw data form is available to look at.
+
+All in all, there is only an aesthetic difference between the two.
+The webpage is simply formatting the response wheras Microsoft Edge is not
+when viewing the response directly.
