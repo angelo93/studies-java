@@ -27,3 +27,6 @@ hs_err_pid*
 # *.classpath
 # .settings/
 .metadata/
+
+# Project requirments/resources
+*.pdf

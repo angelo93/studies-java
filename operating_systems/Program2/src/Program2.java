@@ -65,27 +65,102 @@ public class Program2 {
     //
     // **************************************************************
     public void mainLoop() {
+        File src_file = getSrcFile();
+        File dst_file = getDstFile();
 
-        // Get filenames
-        String src_file_path = getFilePath("Please enter source file path: ");
-        String dst_file_path = getFilePath("Please enter destination file path: ");
-        System.out.println();
-
-        // Open file handlers
-        File src_file = new File(src_file_path);
-        File dst_file = new File(dst_file_path);
-
-        // Validate files
-        boolean src_is_valid = validFile(src_file);
-        boolean dst_is_valid = validFile(dst_file);
-
-        // Only copy if both file paths point to valid files
-        if (src_is_valid == true && dst_is_valid == true) {
+        // Destination file set to "" if errors occur
+        // or user chooses to not overwrite.
+        if (dst_file.getName().equals("") == false) {
             copyFile(src_file, dst_file);
+        } else {
+            System.out.println("Exiting without copying.");
         } // end if
 
         return;
     } // End mainLoop()
+
+    // ***************************************************************
+    //
+    // Method:      getSrcFile (Non Static)
+    //
+    // Description: Get source file
+    //
+    // Parameters:  None
+    //
+    // Returns:     File src_file
+    //
+    // **************************************************************
+    public File getSrcFile() {
+        String prompt   = "Please enter source file path: ";
+        File   src_file = new File(getFilePath(prompt));
+
+        while (src_file.exists() == false || src_file.isFile() == false) {
+            System.out.println("File either doesn't exist or is not a file:");
+            System.out.println(src_file.getAbsolutePath());
+            System.out.println();
+            src_file = new File(getFilePath(prompt));
+        } // end while
+
+        return src_file;
+    } // end getSrcFile()
+
+    // ***************************************************************
+    //
+    // Method:      getDstFile (Non Static)
+    //
+    // Description: Get destination file
+    //
+    // Parameters:  None
+    //
+    // Returns:     File dst_file
+    //
+    // **************************************************************
+    public File getDstFile() {
+        boolean created  = false;
+        String  prompt   = "Please enter destination file path: ";
+        File    dst_file = new File(getFilePath(prompt));
+
+        // Attempt to create destination file
+        try {
+            created = dst_file.createNewFile();
+
+            if (created == false) {
+                String input = getInput("^Y|N|y|n$", "Overwrite? (Y)es (N)o: ");
+                if (input.equals("N") || input.equals("n")) {
+                    dst_file = new File("");
+                } // end if
+            } // end if
+
+        } catch (IOException e) {
+            System.out.println("Failed to create file");
+            dst_file = new File("");
+        } // end try
+
+        return dst_file;
+    } // end getDstFile()
+
+    // ***************************************************************
+    //
+    // Method: getInput (Non Static)
+    //
+    // Description: Get user input with scanner
+    //
+    // Parameters: String regex
+    //             String prompt
+    //
+    // Returns: String input
+    //
+    // **************************************************************
+    public String getInput(String regex, String prompt) {
+        String input = "";
+
+        while (!(input.matches(regex) && input.length() > 0)) {
+            System.out.print(prompt);
+            input = scanner.nextLine();
+        } // end while
+
+        return input;
+    } // end getInput()
 
     // ***************************************************************
     //
@@ -121,7 +196,7 @@ public class Program2 {
     public String getFilePath(String prompt) {
         String input = "";
 
-        // Get raw input
+        // Get raw input and trim whitespace
         System.out.print(prompt);
         input = scanner.nextLine().trim();
 
@@ -130,32 +205,7 @@ public class Program2 {
 
     // ***************************************************************
     //
-    // Method:      validFile (Non Static)
-    //
-    // Description: Check if file exists and is a file
-    //
-    // Parameters:  String file path
-    //
-    // Returns:     boolean exists
-    //
-    // **************************************************************
-    public boolean validFile(File file) {
-        boolean is_valid = false;
-
-        if (file.exists() == true && file.isFile() == true) {
-            is_valid = true;
-        } else {
-            System.out.println("File either doesn't exist or is not a file:");
-            System.out.println(file.getAbsolutePath());
-            System.out.println();
-        } // end if
-
-        return is_valid;
-    }
-
-    // ***************************************************************
-    //
-    // Method:      copyFilevalidFile (Non Static)
+    // Method:      copyFile (Non Static)
     //
     // Description: Copy contents of one file to another
     //
@@ -166,15 +216,16 @@ public class Program2 {
     //
     // **************************************************************
     public void copyFile(File src_file, File dst_file) {
-        System.out.println("Copying source file content to destination file...");
-        
+        System.out.printf("Copying from: %s => %s", src_file.getName(), dst_file.getName());
+        System.out.println();
+
         try {
             InputStream  in_stream  = new FileInputStream(src_file);
             OutputStream out_stream = new FileOutputStream(dst_file);
-            
+
             byte[] buffer = new byte[1024];
             int    length;
-            
+
             // While there is content left in source, fill buffer and write out
             while ((length = in_stream.read(buffer)) > 0) {
                 out_stream.write(buffer, 0, length);
@@ -191,5 +242,5 @@ public class Program2 {
         }
 
         return;
-    }
+    } // end copyFile()
 }
