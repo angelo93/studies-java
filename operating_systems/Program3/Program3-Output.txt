@@ -1,0 +1,65 @@
+==========================
+Client
+==========================
+$ java Program3Client.java
+Name:    Michael Navarro
+Course:  COSC 4302 Operating Systems
+Program: Three
+
+Please enter message, 'bye' to quit: this is a test
+Server: this is a test
+
+Please enter message, 'bye' to quit: bye
+
+==========================
+$ java Program3Client.java
+Name:    Michael Navarro
+Course:  COSC 4302 Operating Systems
+Program: Three
+
+Please enter message, 'bye' to quit: this is another test
+Server: this is another test
+
+Please enter message, 'bye' to quit:
+Server:
+
+Please enter message, 'bye' to quit:
+Server:
+
+Please enter message, 'bye' to quit: bYe
+
+==========================
+$ java Program3Client.java
+Name:    Michael Navarro
+Course:  COSC 4302 Operating Systems
+Program: Three
+
+Please enter message, 'bye' to quit: this is the last test
+Server: this is the last test
+
+Please enter message, 'bye' to quit:
+
+==========================
+Server
+==========================
+$ java Program3Server.java
+Name:    Michael Navarro
+Course:  COSC 4302 Operating Systems
+Program: Three
+
+Client Connection Opened
+Client[1]: this is a test
+Client[1]: bye
+Client Connection Closed
+
+Client Connection Opened
+Client[2]: this is another test
+Client[2]:
+Client[2]:
+Client[2]: bYe
+Client Connection Closed
+
+Client Connection Opened
+Client[3]: this is the last test
+Client[3]: null
+Client Connection Closed Abrubtly
